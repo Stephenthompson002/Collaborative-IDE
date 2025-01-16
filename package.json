@@ -1,0 +1,39 @@
+{
+  "name": "collaborative-ide",
+  "version": "1.0.0",
+  "description": "A real-time collaborative IDE desktop application.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "devDependencies": {
+    "electron": "^34.0.0",
+    "electron-builder": "^24.6.0"
+  },
+  "build": {
+    "appId": "com.example.collaborativeide",
+    "productName": "CollaborativeIDE",
+    "files": [
+      "main.js",
+      "preload.js",
+      "renderer/build/**/*"
+    ],
+    "directories": {
+      "output": "dist"
+    }
+  },
+  "dependencies": {
+    "codemirror": "^6.0.1",
+    "collaborative-ide": "file:",
+    "express": "^4.21.2",
+    "multer": "^1.4.5-lts.1",
+    "socket.io": "^4.8.1",
+    "socket.io-client": "^4.8.1",
+    "vm2": "^3.9.19"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}
